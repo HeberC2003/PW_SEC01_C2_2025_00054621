@@ -1,0 +1,83 @@
+/* Reset mínimo */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif; 
+  background: #fff;        /* fondo blanco como en la maqueta */
+  color: #222;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.container { max-width: 1000px; margin: 0 auto; }
+
+/* Encabezado */
+.site-header { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 10px; text-align: center; }
+.site-header h1 { margin-bottom: 6px; font-size: 2rem; }
+.lead { color: #555; margin-bottom: 10px; }
+
+/* Botones */
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; justify-content: center; }
+.btn {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover { background: #005dc1; }
+
+/* Grid principal: Datos (izq) + Descripción/Contenido (der) */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* izquierda más angosta */
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Contenido del libro en 3 columnas */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+.grid-3.stacked { grid-template-columns: 1fr; } /* alterna a filas */
+
+/* Datos del libro */
+.datos { list-style: none; margin-top: 6px; }
+.datos li { margin-bottom: 6px; }
+
+/* Zona de imagen debajo de "Datos del libro" */
+#zonaImagen img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+/* Contenido individual */
+.item h3 { margin-bottom: 6px; font-size: 1.05rem; }
+
+/* Colores alternos (botón 3 del examen) */
+.alt-subtitle { color: #b22222; }  
+.alt-text     { color: #444; }     
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+}
