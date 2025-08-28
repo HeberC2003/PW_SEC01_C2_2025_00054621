@@ -1,0 +1,88 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examen Practica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="pageTitle">TITULO DEL LIBRO</h1>
+      <p class="lead">Autor: Rony el Crack &bull; Publicado: Agosto 2025</p>
+
+      <div class="actions">
+        <button id="btnToggleLayout" class="btn" type="button">Alternar columnas/filas (Contenido del libro)</button>
+        <button id="btnChangeTitle" class="btn" type="button">Cambiar título</button>
+        <button id="btnRecolor" class="btn" type="button">Cambiar color de "Descripción del libro" y texto</button>
+        <button id="btnAddImage" class="btn" type="button">Agregar imagen bajo "Datos del libro"</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+  <section class="grid-2">
+    <div>
+      <h2>Datos del libro</h2>
+      <ul class="datos">
+        <li><strong>Título:</strong> Titulo del libro</li>
+        <li><strong>Autor:</strong> Lorem ipsum</li>
+        <li><strong>Editorial:</strong> Alfaguara</li>
+        <li><strong>Año de publicación:</strong> 2021</li>
+        <li><strong>ISBN:</strong> 217281920-219221-21212</li>
+      </ul>
+
+      <div id="zonaImagen"></div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div>
+      <!-- Descripción -->
+      <h2 id="subDescripcion">Descripción del libro</h2>
+      <p id="textoDescripcion">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officia sequi soluta suscipit, illum dignissimos eaque eius, animi, eligendi pariatur quos rerum eos id minus harum! Quo deleniti dolorum placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni deleniti architecto, eaque obcaecati labore illum sed explicabo quibusdam consequatur numquam, veritatis velit voluptas odio. Voluptatem ipsam sit exercitationem magni.
+      </p>
+
+      <!-- Contenido -->
+      <h2>Contenido del libro</h2>
+      <p>
+        El contenido de este libro se estructura en tres apartados bien diferenciados:
+      </p>
+
+      <div id="contenidoLibro" class="grid-3">
+        <article class="item">
+          <h3>Primera parte</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officia sequi soluta suscipit, illum dignissimos eaque eius, animi, eligendi pariatur quos rerum eos id minus harum! Quo deleniti dolorum placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni deleniti architecto.</p>
+        </article>
+
+        <article class="item">
+          <h3>Segunda parte</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officia sequi soluta suscipit, illum dignissimos eaque eius, animi, eligendi pariatur quos rerum eos id minus harum! Quo deleniti dolorum placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni deleniti architecto.</p>
+        </article>
+
+        <article class="item">
+          <h3>Tercera parte</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid officia sequi soluta suscipit, illum dignissimos eaque eius, animi, eligendi pariatur quos rerum eos id minus harum! Quo deleniti dolorum placeat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni deleniti architecto.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 — Proyecto Programación Web.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
